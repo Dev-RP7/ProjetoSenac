@@ -25,7 +25,8 @@ export class UsuariosService {
   }
 
   editar(usuario: Usuario): Observable<Usuario> {
-    return this.http.put<Usuario>(`${this.API}/${usuario.id}`, usuario);
+    const url = `${this.API}/${usuario.id}`;
+    return this.http.put<Usuario>(url, usuario);
   }
 
   excluir(id: number): Observable<Usuario> {

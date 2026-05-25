@@ -2,19 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { Medico } from '../../../core/models/medico';
 import { MedicosService } from '../../../core/services/medicos';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from "@angular/router";
+import { RouterModule, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-medicos',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterModule],
   templateUrl: './medicos.html',
   styleUrl: './medicos.scss',
 })
 export class Medicos implements OnInit {
   listaMedicos: Medico[] = [];
 
-  constructor(private service: MedicosService) {}
+  constructor(private service: MedicosService, private router: Router) {}
 
   ngOnInit(): void {
     this.carregarMedicos();
@@ -36,5 +37,4 @@ export class Medicos implements OnInit {
     });
   }
 
-  
 }

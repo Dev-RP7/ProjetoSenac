@@ -4,6 +4,8 @@ import { medicoGuard } from './core/guards/medico-guard';
 import { authGuard } from './core/guards/auth-guard';
 import { Login } from './features/auth/login/login';
 import { ForgotPassword } from './features/auth/forgot-password/forgot-password';
+import { AlterarMedico } from './features/auth/alterar-medico/alterar-medico';
+import { AlterarUsuario } from './features/auth/alterar-usuario/alterar-usuario';
 
 export const routes: Routes = [
 
@@ -33,7 +35,8 @@ export const routes: Routes = [
             { path: 'medicos', loadComponent: () => import('./features/admin/medicos/medicos').then(c => c.Medicos)},
             { path: 'relatorios', loadComponent: () => import('./features/admin/relatorios/relatorios').then(c => c.Relatorios)},
             { path: 'consultas', loadComponent: () => import('./features/admin/consultas/consultas').then(c => c.Consultas)},
-            { path: 'alterar/:id', loadComponent: () => import('./features/auth/alterar/alterar').then(c => c.Alterar) },
+            { path: 'alterarMedico/:id', loadComponent: () => import('./features/auth/alterar-medico/alterar-medico').then(c => c.AlterarMedico) },
+            { path: 'alterarUsuario/:id', loadComponent: () => import('./features/auth/alterar-usuario/alterar-usuario').then(c => c.AlterarUsuario) },
             { path: 'sair', loadComponent: () => import('./features/auth/login/login').then(c => c.Login) }
         ]
     },

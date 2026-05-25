@@ -15,7 +15,7 @@
           <td>{{ medicos.nome }}</td>
           <td>{{ medicos.email }}</td>
           <td>
-            <button *ngIf="medicos.id" class="btn-editar" [routerLink]="['/alterar', medicos.id]">Editar</button>
+            <button *ngIf="medicos.id" class="btn-editar" [routerLink]="['/auth/alterar-medico', medicos.id]">Editar</button>
             <button class="btn-excluir" (click)="excluir(medicos.id!)">Excluir</button>
           </td>
         </tr>

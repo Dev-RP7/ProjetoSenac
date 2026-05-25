@@ -31,4 +31,6 @@ export class MedicosService {
     excluir(id: number): Observable<Medico> {
       return this.http.delete<Medico>(`${this.API}/${id}`);
     }
+
+    
 }

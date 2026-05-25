@@ -17,7 +17,7 @@
         <td>{{ usuario.email }}</td>
         <td>{{ usuario.telefone }}</td>
         <td>
-          <a routerLink="/alterar" routerLinkActive="active">Editar</a>
+          <button *ngIf="usuario.id" class="btn-editar" [routerLink]="['/auth/alterar-usuario', usuario.id]">Editar</button>
           <button class="btn-excluir" (click)="excluir(usuario.id!)">Excluir</button>
         </td>
       </tr>
