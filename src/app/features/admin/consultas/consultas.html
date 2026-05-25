@@ -1,0 +1,129 @@
+<div class="consultas-container">
+
+  <header class="topbar">
+    <div>
+      <h1>Consultas</h1>
+      <p>Painel administrativo de consultas médicas</p>
+    </div>
+
+    <button class="btn-nova" (click)="novaConsulta()">
+      + Nova Consulta
+    </button>
+  </header>
+
+  <section class="cards">
+
+    <div class="card">
+      <span>Total Hoje</span>
+      <h2>24</h2>
+    </div>
+
+    <div class="card">
+      <span>Confirmadas</span>
+      <h2>18</h2>
+    </div>
+
+    <div class="card">
+      <span>Canceladas</span>
+      <h2>3</h2>
+    </div>
+
+    <div class="card">
+      <span>Pendentes</span>
+      <h2>3</h2>
+    </div>
+
+  </section>
+
+  <section class="table-section">
+
+    <div class="table-header">
+
+      <input
+        type="text"
+        placeholder="Pesquisar paciente..."
+      />
+
+      <select>
+        <option>Todos Status</option>
+        <option>Confirmada</option>
+        <option>Pendente</option>
+        <option>Cancelada</option>
+      </select>
+
+    </div>
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>Paciente</th>
+          <th>Médico</th>
+          <th>Especialidade</th>
+          <th>Data</th>
+          <th>Horário</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>João Silva</td>
+          <td>Dr. Carlos</td>
+          <td>Cardiologia</td>
+          <td>24/05/2026</td>
+          <td>09:00</td>
+          <td>
+            <span class="status confirmada">
+              Confirmada
+            </span>
+          </td>
+          <td class="acoes">
+            <button class="editar">Editar</button>
+            <button class="cancelar">Cancelar</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Ana Souza</td>
+          <td>Dra. Fernanda</td>
+          <td>Dermatologia</td>
+          <td>24/05/2026</td>
+          <td>10:30</td>
+          <td>
+            <span class="status pendente">
+              Pendente
+            </span>
+          </td>
+          <td class="acoes">
+            <button class="editar">Editar</button>
+            <button class="cancelar">Cancelar</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Lucas Lima</td>
+          <td>Dr. Ricardo</td>
+          <td>Ortopedia</td>
+          <td>24/05/2026</td>
+          <td>14:00</td>
+          <td>
+            <span class="status cancelada">
+              Cancelada
+            </span>
+          </td>
+          <td class="acoes">
+            <button class="editar">Editar</button>
+            <button class="cancelar">Cancelar</button>
+          </td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </section>
+
+</div>

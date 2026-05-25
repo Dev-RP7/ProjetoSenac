@@ -1,0 +1,27 @@
+<div class="content-container">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (usuario of listaUsuarios; track usuario){
+      <tr>
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.nome }}</td>
+        <td>{{ usuario.email }}</td>
+        <td>{{ usuario.telefone }}</td>
+        <td>
+          <a routerLink="/alterar" routerLinkActive="active">Editar</a>
+          <button class="btn-excluir" (click)="excluir(usuario.id!)">Excluir</button>
+        </td>
+      </tr>
+    }
+    </tbody>
+  </table>
+</div>

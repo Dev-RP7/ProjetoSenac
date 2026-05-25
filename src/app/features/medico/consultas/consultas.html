@@ -1,0 +1,202 @@
+<div class="consultations-container">
+
+  <!-- HEADER -->
+  <div class="page-header">
+
+    <div>
+      <h1>Consultas</h1>
+      <p>Gerencie todas as consultas médicas</p>
+    </div>
+
+    <button class="new-consultation-btn">
+      + Nova Consulta
+    </button>
+
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filters-section">
+
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+
+      <input
+        type="text"
+        placeholder="Pesquisar paciente..."
+      >
+    </div>
+
+    <select>
+      <option>Todas</option>
+      <option>Confirmadas</option>
+      <option>Pendentes</option>
+      <option>Canceladas</option>
+    </select>
+
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-container">
+
+    <table>
+
+      <thead>
+
+        <tr>
+          <th>Paciente</th>
+          <th>Especialidade</th>
+          <th>Data</th>
+          <th>Horário</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+
+          <td>
+            <div class="patient-info">
+
+              <img
+                src="https://i.pravatar.cc/100?img=1"
+                alt="Paciente"
+              >
+
+              <div>
+                <h3>Lucas Almeida</h3>
+                <span>Paciente</span>
+              </div>
+
+            </div>
+          </td>
+
+          <td>Cardiologia</td>
+          <td>24/05/2026</td>
+          <td>08:00</td>
+
+          <td>
+            <span class="status confirmed">
+              Confirmada
+            </span>
+          </td>
+
+          <td>
+
+            <div class="actions">
+
+              <button class="edit-btn">
+                Editar
+              </button>
+
+              <button class="delete-btn">
+                Cancelar
+              </button>
+
+            </div>
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>
+            <div class="patient-info">
+
+              <img
+                src="https://i.pravatar.cc/100?img=2"
+                alt="Paciente"
+              >
+
+              <div>
+                <h3>Ana Souza</h3>
+                <span>Paciente</span>
+              </div>
+
+            </div>
+          </td>
+
+          <td>Pediatria</td>
+          <td>25/05/2026</td>
+          <td>10:30</td>
+
+          <td>
+            <span class="status pending">
+              Pendente
+            </span>
+          </td>
+
+          <td>
+
+            <div class="actions">
+
+              <button class="edit-btn">
+                Editar
+              </button>
+
+              <button class="delete-btn">
+                Cancelar
+              </button>
+
+            </div>
+
+          </td>
+
+        </tr>
+
+        <tr>
+
+          <td>
+            <div class="patient-info">
+
+              <img
+                src="https://i.pravatar.cc/100?img=3"
+                alt="Paciente"
+              >
+
+              <div>
+                <h3>Pedro Henrique</h3>
+                <span>Paciente</span>
+              </div>
+
+            </div>
+          </td>
+
+          <td>Ortopedia</td>
+          <td>26/05/2026</td>
+          <td>14:00</td>
+
+          <td>
+            <span class="status cancelled">
+              Cancelada
+            </span>
+          </td>
+
+          <td>
+
+            <div class="actions">
+
+              <button class="edit-btn">
+                Editar
+              </button>
+
+              <button class="delete-btn">
+                Cancelar
+              </button>
+
+            </div>
+
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>

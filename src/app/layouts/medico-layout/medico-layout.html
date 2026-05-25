@@ -1,0 +1,25 @@
+<div class="container">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="logo-icon">🏥</div>
+      <div>
+        <h2>MedMedico</h2>
+        <span>Área do Médico</span>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a routerLink="/medico/agenda" routerLinkActive="active">Agenda</a>
+      <a routerLink="/medico/consultas" routerLinkActive="active">Consultas</a>
+      <a routerLink="/medico/pacientes" routerLinkActive="active">Pacientes</a>
+      <a routerLink="/medico/prontuarios" routerLinkActive="active">Prontuários</a>
+      <a routerLink="/login" routerLinkActive="active">Sair</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+
+</div>

@@ -1,0 +1,31 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Raphaela Nogueira",
+      "email": "rapha@gmail.com",
+      "senha": "123456",
+      "telefone": "(11) 98765-4321",
+      "tipo": "Paciente"
+    }
+  ],
+  "medicos": [
+    {
+      "id": "1",
+      "nome": "Ecteruel",
+      "email": "medico@gmail.com",
+      "senha": "medico",
+      "tipo": "MEDICO"
+    }
+  ],
+  "consultas": [
+    {
+      "id": "1",
+      "data": "2024-07-01T10:00:00",
+      "status": "Agendada",
+      "usuarioId": 1,
+      "medicoId": 1
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

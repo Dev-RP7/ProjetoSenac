@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:host {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    width: 100%;
+}
+
+.register-container{
+    width: 420px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.logo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon{
+    font-size: 50px;
+}
+
+.logo h1{
+    color: #1e3a8a;
+    margin-top: 10px;
+}
+
+.logo p{
+    color: #64748b;
+    font-size: 14px;
+}
+
+.input-group{
+    margin-bottom: 18px;
+}
+
+.input-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #334155;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus{
+    border-color: #2563eb;
+}
+
+.register-btn{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-btn:hover{
+    background: #1d4ed8;
+}
+
+.links{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 14px;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-simples {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+
+.input-simples:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+.input-submeter {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #28a745; 
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.input-submeter:hover {
+  background-color: #218838;
+}
